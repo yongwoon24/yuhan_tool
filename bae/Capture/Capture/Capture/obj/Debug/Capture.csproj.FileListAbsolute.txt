@@ -1,0 +1,11 @@
+D:\3A_Study\Capture\Capture\Capture\bin\Debug\Capture.exe.config
+D:\3A_Study\Capture\Capture\Capture\bin\Debug\Capture.exe
+D:\3A_Study\Capture\Capture\Capture\bin\Debug\Capture.pdb
+D:\3A_Study\Capture\Capture\Capture\obj\Debug\Capture.csproj.AssemblyReference.cache
+D:\3A_Study\Capture\Capture\Capture\obj\Debug\Capture.csproj.SuggestedBindingRedirects.cache
+D:\3A_Study\Capture\Capture\Capture\obj\Debug\Capture.Form1.resources
+D:\3A_Study\Capture\Capture\Capture\obj\Debug\Capture.Properties.Resources.resources
+D:\3A_Study\Capture\Capture\Capture\obj\Debug\Capture.csproj.GenerateResource.cache
+D:\3A_Study\Capture\Capture\Capture\obj\Debug\Capture.csproj.CoreCompileInputs.cache
+D:\3A_Study\Capture\Capture\Capture\obj\Debug\Capture.exe
+D:\3A_Study\Capture\Capture\Capture\obj\Debug\Capture.pdb
