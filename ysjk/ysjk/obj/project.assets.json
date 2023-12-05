@@ -1659,19 +1659,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\YUHAN\\.nuget\\packages\\": {}
+    "C:\\Users\\lyw\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\202118011\\project\\ysjk\\ysjk\\ysjk.csproj",
+      "projectUniqueName": "D:\\yuhan_tool\\ysjk\\ysjk\\ysjk.csproj",
       "projectName": "ysjk",
-      "projectPath": "D:\\202118011\\project\\ysjk\\ysjk\\ysjk.csproj",
-      "packagesPath": "C:\\Users\\YUHAN\\.nuget\\packages\\",
-      "outputPath": "D:\\202118011\\project\\ysjk\\ysjk\\obj\\",
+      "projectPath": "D:\\yuhan_tool\\ysjk\\ysjk\\ysjk.csproj",
+      "packagesPath": "C:\\Users\\lyw\\.nuget\\packages\\",
+      "outputPath": "D:\\yuhan_tool\\ysjk\\ysjk\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\YUHAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lyw\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1721,7 +1721,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
