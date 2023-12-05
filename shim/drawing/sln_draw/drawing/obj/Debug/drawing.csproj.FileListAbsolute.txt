@@ -1,0 +1,11 @@
+D:\3A_Study\drawing\sln_draw\drawing\bin\Debug\drawing.exe.config
+D:\3A_Study\drawing\sln_draw\drawing\bin\Debug\drawing.exe
+D:\3A_Study\drawing\sln_draw\drawing\bin\Debug\drawing.pdb
+D:\3A_Study\drawing\sln_draw\drawing\obj\Debug\drawing.csproj.AssemblyReference.cache
+D:\3A_Study\drawing\sln_draw\drawing\obj\Debug\drawing.csproj.SuggestedBindingRedirects.cache
+D:\3A_Study\drawing\sln_draw\drawing\obj\Debug\drawing.Form1.resources
+D:\3A_Study\drawing\sln_draw\drawing\obj\Debug\drawing.Properties.Resources.resources
+D:\3A_Study\drawing\sln_draw\drawing\obj\Debug\drawing.csproj.GenerateResource.cache
+D:\3A_Study\drawing\sln_draw\drawing\obj\Debug\drawing.csproj.CoreCompileInputs.cache
+D:\3A_Study\drawing\sln_draw\drawing\obj\Debug\drawing.exe
+D:\3A_Study\drawing\sln_draw\drawing\obj\Debug\drawing.pdb
