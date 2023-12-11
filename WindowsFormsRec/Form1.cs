@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -11,6 +12,7 @@ namespace WindowsFormsRec
 {
     public partial class Form1 : Form
     {
+        private string recordingFilePath = "C:\\REC"; // 기본 경로
         Thread tUpdate;
         static public object RecodeLock = new object();
         VideoWriter videoWriter;
@@ -30,15 +32,15 @@ namespace WindowsFormsRec
             this.KeyDown += Form1_KeyDown;
             tUpdate = new Thread(Update);
             tUpdate.Priority = ThreadPriority.Normal;
-            tUpdate.Start();                     
+            tUpdate.Start();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             label1.Text = DateTime.Now.ToString("yyyy MM dd HH:mm:ss");
 
-            if (RecPara.bNeedRecode) label2.Text = "REC";
-            else label2.Text = "STOP";
+            if (RecPara.bNeedRecode) label2.Text = "녹화중입니다.";
+            else label2.Text = "녹화가 중지되었습니다.";
         }
 
         Stopwatch swRec = new Stopwatch();
@@ -83,10 +85,10 @@ namespace WindowsFormsRec
 
         private void button1_Click(object sender, EventArgs e)
         {
-            StartRecording();
+            StartRec();
         }
 
-        private void StartRecording()
+        private void StartRec()
         {
             button1.Enabled = false;
 
@@ -97,16 +99,25 @@ namespace WindowsFormsRec
             RecPara.rRect.Height = Screen.PrimaryScreen.Bounds.Height;
             RecPara.iFps = 30;
 
-            string sPath = "C:\\Rec\\" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".mp4";
-            if (!Directory.Exists(Path.GetDirectoryName(sPath)))
+            string sPath = Path.Combine(recordingFilePath, DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".mp4");
+            byte[] utf8Bytes = Encoding.UTF8.GetBytes(sPath);
+
+            // UTF-8으로 변환된 바이트 배열을 사용하여 디렉터리 생성
+            string utf8Path = Encoding.UTF8.GetString(utf8Bytes);
+            try
             {
-                Directory.CreateDirectory(Path.GetDirectoryName(sPath));
+                Directory.CreateDirectory(Path.GetDirectoryName(utf8Path));
             }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error creating directory: {ex.Message}");
+            }
+
             string sFourcc = "H264";
 
             int iFourcc = VideoWriter.Fourcc(sFourcc[0], sFourcc[1], sFourcc[2], sFourcc[3]);
 
-            videoWriter = new VideoWriter(sPath, iFourcc, RecPara.iFps, new Size(RecPara.rRect.Width, RecPara.rRect.Height), true);
+            videoWriter = new VideoWriter(utf8Path, iFourcc, RecPara.iFps, new Size(RecPara.rRect.Width, RecPara.rRect.Height), true);
             videoWriter.Set(VideoWriter.WriterProperty.Quality, 100);
 
             button1.Enabled = true;
@@ -114,10 +125,10 @@ namespace WindowsFormsRec
 
         private void button2_Click(object sender, EventArgs e)
         {
-            StopRecording();
+            StopRec();
         }
 
-        private void StopRecording()
+        private void StopRec()
         {
             lock (RecodeLock)
             {
@@ -150,11 +161,26 @@ namespace WindowsFormsRec
             {
                 if (RecPara.bNeedRecode)
                 {
-                    StopRecording();
+                    StopRec();
                 }
                 else
                 {
-                    StartRecording();
+                    StartRec();
+                }
+            }
+        }
+
+        private void selectPathButton_Click(object sender, EventArgs e)
+        {
+            using (FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog())
+            {
+                folderBrowserDialog.Description = "녹화 동영상 저장 폴더 선택";
+                folderBrowserDialog.SelectedPath = recordingFilePath; // 초기 경로 설정
+
+                if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+                {
+                    recordingFilePath = folderBrowserDialog.SelectedPath;
+                    label3.Text = $"현재 경로: {recordingFilePath}";
                 }
             }
         }
