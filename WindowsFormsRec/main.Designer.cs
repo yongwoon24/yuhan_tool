@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
             this.paintbtn = new System.Windows.Forms.Button();
             this.recbtn = new System.Windows.Forms.Button();
             this.notebtn = new System.Windows.Forms.Button();
@@ -78,13 +79,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.capture);
             this.Controls.Add(this.notebtn);
             this.Controls.Add(this.recbtn);
             this.Controls.Add(this.paintbtn);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "main";
-            this.Text = "main";
+            this.Text = "YuhanTool";
             this.ResumeLayout(false);
 
         }
