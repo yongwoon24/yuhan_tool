@@ -62,3 +62,26 @@ D:\yuhan_tool\WindowsFormsRec\obj\Debug\Notepad.Form2.resources
 D:\yuhan_tool\WindowsFormsRec\obj\Debug\WindowsFormsRec.main.resources
 D:\yuhan_tool\WindowsFormsRec\obj\Debug\Notepad.Form1.resources
 D:\yuhan_tool\WindowsFormsRec\obj\Debug\drawing.paint.resources
+D:\C last\workspace\WindowsFormsRec\bin\Debug\WindowsFormsRec.exe.config
+D:\C last\workspace\WindowsFormsRec\bin\Debug\WindowsFormsRec.exe
+D:\C last\workspace\WindowsFormsRec\bin\Debug\WindowsFormsRec.pdb
+D:\C last\workspace\WindowsFormsRec\bin\Debug\Emgu.CV.Bitmap.dll
+D:\C last\workspace\WindowsFormsRec\bin\Debug\Emgu.CV.Platform.NetFramework.dll
+D:\C last\workspace\WindowsFormsRec\bin\Debug\Emgu.CV.Platform.NetStandard.dll
+D:\C last\workspace\WindowsFormsRec\bin\Debug\System.Drawing.Common.dll
+D:\C last\workspace\WindowsFormsRec\bin\Debug\Emgu.CV.Bitmap.xml
+D:\C last\workspace\WindowsFormsRec\bin\Debug\Emgu.CV.Platform.NetFramework.xml
+D:\C last\workspace\WindowsFormsRec\bin\Debug\Emgu.CV.Platform.NetStandard.xml
+D:\C last\workspace\WindowsFormsRec\bin\Debug\System.Drawing.Common.xml
+D:\C last\workspace\WindowsFormsRec\obj\Debug\WindowsFormsRec.csproj.AssemblyReference.cache
+D:\C last\workspace\WindowsFormsRec\obj\Debug\Capture.Form1.resources
+D:\C last\workspace\WindowsFormsRec\obj\Debug\WindowsFormsRec.Form1.resources
+D:\C last\workspace\WindowsFormsRec\obj\Debug\Notepad.Form2.resources
+D:\C last\workspace\WindowsFormsRec\obj\Debug\WindowsFormsRec.main.resources
+D:\C last\workspace\WindowsFormsRec\obj\Debug\Notepad.Form1.resources
+D:\C last\workspace\WindowsFormsRec\obj\Debug\drawing.paint.resources
+D:\C last\workspace\WindowsFormsRec\obj\Debug\WindowsFormsRec.Properties.Resources.resources
+D:\C last\workspace\WindowsFormsRec\obj\Debug\WindowsFormsRec.csproj.GenerateResource.cache
+D:\C last\workspace\WindowsFormsRec\obj\Debug\WindowsFormsRec.csproj.CoreCompileInputs.cache
+D:\C last\workspace\WindowsFormsRec\obj\Debug\WindowsFormsRec.exe
+D:\C last\workspace\WindowsFormsRec\obj\Debug\WindowsFormsRec.pdb
