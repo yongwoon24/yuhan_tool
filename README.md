@@ -7,3 +7,15 @@
 - **WindowsFormsRec**: 화면 녹화 도구.
 - **Drawing**: 그림판 도구.
 - **Capture**: 화면 캡처 도구.
+- **Notepad**: 메모장 도구.
+
+## 결과물
+- 메인
+![image](https://github.com/user-attachments/assets/ffbbfac0-3225-4e00-b269-5b6653da1a90)
+- 녹화
+![image](https://github.com/user-attachments/assets/eb6e93bb-03d7-437a-a76b-ae24d799f31f)
+- 메모장
+![image](https://github.com/user-attachments/assets/a76f4064-a0e0-4efe-ab8d-4188769a07d9)
+- 그림판
+![image](https://github.com/user-attachments/assets/41eb7f5b-e99f-42e4-b2a7-8a6dc5168148)
+
